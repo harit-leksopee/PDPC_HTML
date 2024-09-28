@@ -3,7 +3,13 @@
 *::after {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none !important;
+}
 
+.btn:first-child:active {
+  border: none !important;
+}
 @font-face {
   font-family: "sukhumvit_setbold";
   src: url("../font/sukhumvitset-bold-webfont.woff2") format("woff2"),
@@ -55,9 +61,48 @@
 body {
   font-family: "sukhumvit_settext";
   background-color: #f7f7f7 !important;
+  font-size: 14px;
+}
+hr {
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+p,
+li {
+  font-family: "sukhumvit_settext";
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+}
+.radius-14 {
+  border-radius: 14px;
+}
+
+.text-small {
+  font-size: 10px !important;
+}
+.f-w-500 {
+  font-weight: 500;
+  font-family: "sukhumvit_settext";
+}
+.btn {
+  font-family: "sukhumvit_setbold";
 }
 .text-primary {
   color: #2d3c68 !important;
+}
+.background-faq {
+  background: linear-gradient(91.66deg, #1b294c 0%, #2e3c69 100%);
+  height: 136.59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-faq h1 {
+  font-family: "sukhumvit_setbold";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 88.87px;
+  color: #fff;
 }
 .nav-fix {
   border-bottom: 1px solid #e6e6e6;
@@ -90,6 +135,20 @@ body {
   font-size: 16px;
   font-weight: 700;
   background: linear-gradient(180deg, #ceb260 0%, #897846 100%);
+}
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  padding: 12px 12px;
+  border-radius: 12px !important;
+  font-size: 16px;
+  height: 45px;
+  font-weight: 700;
+  border: 2px solid #2d3c68;
+  color: #2d3c68 !important;
+  background-color: #d8ddee !important;
+  line-height: 20px;
+  border-color: #2d3c68 !important;
 }
 .txt-nav-p {
   font-family: "sukhumvit_setbold";
@@ -132,12 +191,20 @@ body {
   background: rgba(255, 255, 255, 1);
   margin-bottom: 15px;
 }
-p {
-  font-family: "sukhumvit_settext";
-  font-size: 14px;
-  font-weight: 400;
-  color: #808080;
+.box {
+  width: 100%;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 1);
+  margin-bottom: 15px;
 }
+.box .txt-section {
+  font-size: 24px !important;
+  font-family: "sukhumvit_setbold";
+  font-weight: 700;
+}
+
 .txt-section {
   font-family: "sukhumvit_setsemi_bold";
   font-size: 18px;
@@ -188,7 +255,6 @@ p {
   height: 381px;
   padding: 24px;
   border-radius: 16px !important;
-  opacity: 0px;
   background: rgba(255, 255, 255, 1);
 }
 .box-filter h5 {
@@ -203,9 +269,20 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.box-card,
-p {
+.box-card p {
   font-family: "sukhumvit_setthin";
+}
+.card-large {
+  background: rgba(255, 255, 255, 1);
+  padding: 24px;
+  border-radius: 16px !important;
+  width: 100%;
+}
+.card-small {
+  background: rgba(255, 255, 255, 1);
+  padding: 12px;
+  border-radius: 16px !important;
+  width: 100%;
 }
 .radio-container > div {
   display: grid;
@@ -244,6 +321,154 @@ input[type="radio"]:checked + label span {
   font-weight: 700;
 }
 
+.text--left {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "sukhumvit_setsemi_bold";
+  width: 20%;
+  margin-bottom: 15px;
+}
+.text--rigth {
+  color: #808080 !important;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "sukhumvit_settext";
+  width: 80%;
+  margin-bottom: 15px;
+  line-height: 25.39px;
+}
+
+.custom-collapse {
+  background-color: #ffffff;
+  border: none;
+  padding: 25px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+.custom-collapse-button {
+  color: #293661 !important;
+  background-color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "sukhumvit_setsemi_bold";
+}
+
+.custom-collapse-content p {
+  background-color: #f5f5f500;
+  color: #808080;
+  padding: 10px 35px;
+  line-height: 25.39px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.padding-faq {
+  padding: 0 140px;
+}
+.box-content h5 {
+  color: #333333;
+  font-size: 16px;
+  line-height: 25.39px;
+  font-weight: 700;
+  font-family: "sukhumvit_setsemi_bold";
+}
+.box-content p {
+  font-size: 16px;
+  line-height: 25.39px;
+  color: #808080;
+  font-weight: 400;
+}
+.card-small > .box-content h5 {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 0px;
+  line-height: 22px;
+}
+.card-small > .box-content p {
+  color: #808080;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.card-small > .box-content img {
+  width: 11px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.card-large-img {
+  height: 380px;
+  object-fit: contain;
+  background-color: #2d3c68;
+}
+.card-img {
+  object-fit: cover;
+  height: 120px;
+}
+.new-detail {
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 24px;
+  background-color: #fff;
+}
+.new-detail h4 {
+  font-family: "sukhumvit_setsemi_bold";
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3c68;
+  line-height: 38.09px;
+}
+.new-detail h5 {
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "sukhumvit_setsemi_bold";
+}
+.detail-seemore {
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 24px;
+  background-color: #fff;
+}
+.detail-seemore h4 {
+  font-family: "sukhumvit_setsemi_bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3c68;
+}
+.detail-seemore .card-img {
+  height: 96px;
+  object-fit: cover;
+}
+.gradient {
+  position: absolute;
+  height: 96px;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 60, 104, 0) 0%,
+    rgba(45, 60, 104, 0.4) 100%
+  );
+  width: 100%;
+  border-radius: 15px;
+}
+.detail-seemore h5 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "sukhumvit_setsemi_bold";
+  font-weight: 700;
+}
+.w-50-set {
+  width: 50% !important;
+}
+.scroll-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  width: 100%;
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -256,6 +481,12 @@ input[type="radio"]:checked + label span {
 }
 
 @media (max-width: 991px) {
+  .padding-faq {
+    padding: 0 20px;
+  }
+  .custom-collapse {
+    padding: 10px 10px;
+  }
   .btn-primary {
     width: 100% !important;
     text-align: center !important;
@@ -268,5 +499,20 @@ input[type="radio"]:checked + label span {
   }
   .width-min {
     width: 50px;
+  }
+  .width-min-icon {
+    width: 20px;
+  }
+  .w-50-set {
+    width: 75% !important;
+  }
+  .text--rigth,
+  .text--left {
+    width: 100% !important;
+  }
+
+  .text--left {
+    margin-bottom: 0;
+    font-size: 20px;
   }
 }
