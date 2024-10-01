@@ -60,10 +60,12 @@
 
     <!-- content -->
 
-    <section data-aos="fade-up" data-aos-duration="3000">
+    <section data-aos="fade-up" data-aos-duration="1000">
       <div class="container py-5 padding-faq">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" id="accordion">
+            <!-- Added the id here for grouping collapses -->
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -73,36 +75,33 @@
                 aria-controls="customCollapse"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   หน่วยงานของเราจำเป็นต้องดำเนินการตามกฎหมาย PDPA หรือไม่?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse">
+              <div
+                class="collapse"
+                id="customCollapse"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -112,36 +111,33 @@
                 aria-controls="customCollapse1"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   หน่วยงานของเราจำเป็นต้องดำเนินการตามกฎหมาย PDPA หรือไม่?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse1">
+              <div
+                class="collapse"
+                id="customCollapse1"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -151,36 +147,33 @@
                 aria-controls="customCollapse2"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   เราควรทำอย่างไรถ้าพบว่าข้อมูลส่วนบุคคลของเราอาจถูกละเมิด?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse2">
+              <div
+                class="collapse"
+                id="customCollapse2"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -190,36 +183,33 @@
                 aria-controls="customCollapse3"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   เราควรทำอย่างไรถ้าพบว่าข้อมูลส่วนบุคคลของเราอาจถูกละเมิด?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse3">
+              <div
+                class="collapse"
+                id="customCollapse3"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -229,36 +219,33 @@
                 aria-controls="customCollapse4"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   เราควรทำอย่างไรถ้าพบว่าข้อมูลส่วนบุคคลของเราอาจถูกละเมิด?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse4">
+              <div
+                class="collapse"
+                id="customCollapse4"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -268,36 +255,33 @@
                 aria-controls="customCollapse5"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   เราควรทำอย่างไรถ้าพบว่าข้อมูลส่วนบุคคลของเราอาจถูกละเมิด?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse5">
+              <div
+                class="collapse"
+                id="customCollapse5"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="custom-collapse position-relative mb-4">
               <div
                 class="custom-collapse-button d-flex"
@@ -307,32 +291,28 @@
                 aria-controls="customCollapse6"
               >
                 <div class="pt-1">
-                  <!-- Delete icon -->
                   <img
-                    class="me-3"
-                    id="deleteIcon"
+                    class="me-3 delete-icon"
                     src="asset/image/icon-delete.svg"
                     style="display: none"
                   />
-                  <!-- Plus icon -->
-                  <img
-                    class="me-3"
-                    id="plusIcon"
-                    src="asset/image/icon-plus.svg"
-                  />
+                  <img class="me-3 plus-icon" src="asset/image/icon-plus.svg" />
                 </div>
                 <div>
                   เราควรทำอย่างไรถ้าพบว่าข้อมูลส่วนบุคคลของเราอาจถูกละเมิด?
                 </div>
               </div>
-              <div class="collapse" id="customCollapse6">
+              <div
+                class="collapse"
+                id="customCollapse6"
+                data-bs-parent="#accordion"
+              >
                 <div class="custom-collapse-content">
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Ut morbi mi vel amet
                     lectus. Adipiscing orci laoreet sed nunc ac a velit pretium
                     eget. Amet eget massa malesuada fringilla fames consequat eu
-                    rhoncus et. Eget nec sed sodales diam. Nulla et in nisi
-                    pulvinar. Orci urna maecenas senectus risus.
+                    rhoncus et.
                   </p>
                 </div>
               </div>
@@ -350,21 +330,22 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const deleteIcon = document.getElementById("deleteIcon");
-      const plusIcon = document.getElementById("plusIcon");
-
       document
-        .getElementById("customCollapse")
-        .addEventListener("show.bs.collapse", function () {
-          deleteIcon.style.display = "inline";
-          plusIcon.style.display = "none";
-        });
+        .querySelectorAll(".custom-collapse")
+        .forEach(function (collapseSection) {
+          const collapseElement = collapseSection.querySelector(".collapse");
+          const deleteIcon = collapseSection.querySelector(".delete-icon");
+          const plusIcon = collapseSection.querySelector(".plus-icon");
 
-      document
-        .getElementById("customCollapse")
-        .addEventListener("hide.bs.collapse", function () {
-          deleteIcon.style.display = "none";
-          plusIcon.style.display = "inline";
+          collapseElement.addEventListener("show.bs.collapse", function () {
+            deleteIcon.style.display = "inline";
+            plusIcon.style.display = "none";
+          });
+
+          collapseElement.addEventListener("hide.bs.collapse", function () {
+            deleteIcon.style.display = "none";
+            plusIcon.style.display = "inline";
+          });
         });
     </script>
   </body>
