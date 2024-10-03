@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../asset/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../asset/bootstrap/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../asset/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../asset/css/custom.css" />
+    <title>PDPC</title>
+  </head>
+  <body>
+    <!-- navber -->
+    <header class="fixed-top-nav-admin">
+      <nav class="navbar nav-fix py-2 padding-nav-admin">
+        <div class="d-flex w-100 d-lg-none justify-content-between">
+          <button
+            type="button"
+            class="btn btn-link"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="../asset/image/icon-menu.svg" />
+          </button>
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
+            <img class="img-logo" src="../asset/image/image-logo.png" />
+          </a>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="../asset/image/icon-profile.svg" />
+            </button>
+          </a>
+        </div>
+        <div class="d-none d-lg-block">
+          <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
+          <small class="txt-nav-small"
+            >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
+          >
+        </div>
+        <div class="d-lg-flex d-none gap-4 align-items-center">
+          <div class="text-nav-profile text-end">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <a href="/admin/profile.html">
+            <img src="../asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="../asset/image/icon-logout.svg" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <nav class="sb-nav-fixed sb-sidenav">
+      <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+        <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+      </a>
+      <div class="sb-sidenav-menu mt-4">
+        <div class="nav-list">
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="../asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
+        </div>
+        <div class="nav-list">
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="../asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navber end -->
+
+    <div class="layout_content">
+      <div class="d-lg-flex d-none justify-content-center mb-4">
+        <ul class="status">
+          <li class="active">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-book.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 1</label>
+              <h4 class="text-grey step-1-name">ข้อมูลผู้หารือ</h4>
+            </div>
+          </li>
+          <li class="statusline active"></li>
+          <li class="inactive">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                class="icon-register"
+                src="../asset/image/icon-number-not.svg"
+              />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 2</label>
+              <h4 class="text-grey step-1-name">แจ้งเรื่องหารือ</h4>
+            </div>
+          </li>
+          <li class="statusline"></li>
+          <li class="inactive">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                class="icon-register"
+                src="../asset/image/icon-megaphone.svg"
+              />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 3</label>
+              <h4 class="text-grey step-1-name">ตรวจสอบ</h4>
+            </div>
+          </li>
+          <li class="statusline"></li>
+          <li class="inactive">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-heart.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 4</label>
+              <h4 class="text-grey step-1-name">เจ้าหน้าที่รับเรื่อง</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="card-admin d-flex justify-content-between d-lg-none py-2 mb-4"
+      >
+        <div>
+          <h5 class="mt-3">ข้อมูลผู้หารือ</h5>
+          <label>ขั้นตอนที่ 1</label>
+        </div>
+        <div class="">
+          <div
+            role="progressbar"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="--value: 25"
+          >
+            <span>1/4</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-admin container-fluid mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-lg-5 mb-4">
+              <img
+                src="../asset/image/icon-follow-blue.svg"
+                class="me-3"
+              />ข้อมูลผู้หารือ
+            </h5>
+          </div>
+          <div class="mb-3 col-lg-4 col-12 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >คำนำหน้า:<span class="text-danger">*</span></label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>ชาย</option>
+              <option value="1">หญิง</option>
+            </select>
+          </div>
+          <div class="mb-3 col-lg-4 col-6 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >ชื่อ : <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ตัวอย่าง เช่น ทองดี"
+            />
+          </div>
+          <div class="mb-3 col-lg-4 col-6 px-2">
+            <label for="exampleFormControlInput3" class="form-label"
+              >นามสกุล : <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput3"
+              placeholder="ตัวอย่าง เช่น มึสุข"
+            />
+          </div>
+          <div class="col-lg-6 col-12 mb-3">
+            <label class="form-label">เอกสารประจำตัว :</label>
+            <div class="input-group">
+              <input type="radio" id="id-card" name="document" checked />
+              <label class="col" for="id-card">บัตรประจำตัวประชาชน</label>
+
+              <input type="radio" id="passport" name="document" />
+              <label class="col border-x" for="passport"
+                >เลขหนังสือเดินทาง</label
+              >
+              <input type="radio" id="other-doc" name="document" />
+              <label class="col border-x" for="other-doc"
+                >เอกสารประจำตัวอื่นๆ</label
+              >
+            </div>
+          </div>
+          <div class="mb-3 col-lg-6">
+            <label for="passwordInput" class="form-label">หมายเลข :</label>
+            <input
+              type="text"
+              class="form-control input-login"
+              placeholder="หมายเลขทางราชการออกให้"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card-admin container-fluid mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-lg-5 mb-4" id="addressTitle">
+              <img
+                src="../asset/image/icon-pin.svg"
+                class="me-3"
+              />ข้อมูลที่อยู่ตามบัตรประชาชน
+            </h5>
+          </div>
+        </div>
+        <form class="row">
+          <div class="mb-3 col-12 col-lg-3 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >ที่อยู่ที่ติดต่อได้ : <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ตัวอย่างเช่น 100/1"
+            />
+          </div>
+          <div class="mb-3 col-12 col-lg-3 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >หมู่ : <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ถ้ามี"
+            />
+          </div>
+          <div class="mb-3 col-12 col-lg-3 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >ถนน :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ถ้ามี"
+            />
+          </div>
+          <div class="mb-3 col-12 col-lg-3 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >ตรอก/ซอย :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ถ้ามี"
+            />
+          </div>
+          <div class="mb-3 col-lg-3 col-6 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >จังหวัด :<span class="text-danger">*</span></label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>นนทบุรี</option>
+              <option value="1">ปทุมธานี</option>
+            </select>
+          </div>
+          <div class="mb-3 col-lg-3 col-6 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >เขต/อำเภอ :<span class="text-danger">*</span></label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>-- เลือกอำเภอ --</option>
+              <option value="1">ปทุมธานี</option>
+            </select>
+          </div>
+          <div class="mb-3 col-lg-3 col-6 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >เเขวง/ตำบล :<span class="text-danger">*</span></label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>-- เลือกตำบล --</option>
+              <option value="1">ปทุมธานี</option>
+            </select>
+          </div>
+          <div class="mb-3 col-6 col-lg-3 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >รหัสไปรษณีย :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ระบุรหัสไปรษณีย์"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="card-admin container-fluid mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-lg-5 mb-4">
+              <img src="../asset/image/icon-email.svg" class="me-3" />ข้อมูลติดต่อ
+            </h5>
+          </div>
+        </div>
+        <form class="row">
+          <div class="mb-3 col-12 col-lg-4 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >เบอร์โทรศัพท์มือถือ :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ตัวเลข 10 หลัก"
+            />
+          </div>
+          <div class="mb-3 col-12 col-lg-4 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >เบอร์โทรศัพท์ :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ถ้ามี"
+            />
+          </div>
+          <div class="mb-3 col-12 col-lg-4 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >อีเมล(ไปรษณีย์อิเล็กทรอนิกส์) :
+            </label>
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="ถ้ามี"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="text-end px-3 px-lg-0">
+        <a href="/admin/follow-new.html">
+          <button class="btn btn-blue px-5 mb-3 w-100-sm">ดำเนินการต่อ</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header justify-content-end p-4">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="text-center">
+            <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+              <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+            </a>
+          </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <div class="sb-sidenav-menu mt-4">
+            <div class="nav-list">
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="../asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/" class="text-dark">
+                <img src="../asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="../asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="../asset/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="../asset/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../asset/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../asset/bootstrap/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../asset/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../asset/css/custom.css" />
+    <title>PDPC</title>
+  </head>
+  <body>
+    <!-- navber -->
+    <header class="fixed-top-nav-admin">
+      <nav class="navbar nav-fix py-2 padding-nav-admin">
+        <div class="d-flex w-100 d-lg-none justify-content-between">
+          <button
+            type="button"
+            class="btn btn-link"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="../asset/image/icon-menu.svg" />
+          </button>
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
+            <img class="img-logo" src="../asset/image/image-logo.png" />
+          </a>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="../asset/image/icon-profile.svg" />
+            </button>
+          </a>
+        </div>
+        <div class="d-none d-lg-block">
+          <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
+          <small class="txt-nav-small"
+            >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
+          >
+        </div>
+        <div class="d-lg-flex d-none gap-4 align-items-center">
+          <div class="text-nav-profile text-end">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <a href="/admin/profile.html">
+            <img src="../asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="../asset/image/icon-logout.svg" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <nav class="sb-nav-fixed sb-sidenav">
+      <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+        <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+      </a>
+      <div class="sb-sidenav-menu mt-4">
+        <div class="nav-list active">
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="../asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
+        </div>
+        <div class="nav-list">
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="../asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navber end -->
+
+    <div class="layout_content">
+      <div class="card-admin container mb-4">
+        <div class="row">
+          <div class="col-lg-6 col-10">
+            <h5 class="mb-lg-2 mb-0">
+              <img
+                src="../asset/image/icon-detail.svg"
+                class="me-3"
+              />รายละเอียดเรื่องหารือ
+            </h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <i class="bi bi-chevron-down text-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card-admin container">
+        <div class="d-flex box-status mb-4">
+          <div>
+            <img src="../asset/image/icon-status-active.svg" class="me-3" />
+          </div>
+          <div class="w-100">
+            <div
+              class="d-lg-flex d-block justify-content-between align-items-center mb-4"
+            >
+              <div class="d-flex align-items-center">
+                <h5 class="mb-0">สถานะ:</h5>
+                <button class="btn btn-sm btn-outline-success ms-3">
+                  <i class="bi bi-check-circle me-2"></i>ดำเนินการเสร็จสิ้น
+                </button>
+              </div>
+              <div class="w-20 text-lg-end text-start">
+                <p class="mb-0">16 กันยายน 2567, 14:23 น.</p>
+              </div>
+            </div>
+            <h5>การตอบกลับของเจ้าหน้าที่:</h5>
+            <div class="detail-lock mb-3">
+              <p class="mb-2 text-gold-2">
+                <img
+                  src="../asset/image/icon-lock.svg"
+                  class="me-2"
+                />รายละเอียดถูกล็อค
+              </p>
+              <p class="mb-0 text-grey-1">
+                กรุณาทำแบบประเมินก่อนดูผลดำเนินการ
+                <a
+                  class="text-primary cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  ><u>คลิก</u></a
+                >
+              </p>
+            </div>
+            <div class="noti-card-register position-relative p-2">
+              <div
+                class="d-lg-flex d-grid align-items-center justify-items-center"
+              >
+                <img
+                  src="../asset/image/download-file1.svg"
+                  class="me-3 mb-lg-0 mb-3"
+                />
+                <div class="w-70 me-2 text-center text-lg-start">
+                  <h5 class="text-primary">
+                    เอกสารตอบกลับ (respond_discussion.doc)
+                  </h5>
+                  <p class="text-grey">
+                    เอกสารดังกล่าวประกอบไปด้วยเนื้อหาหลักของเอกสาร เช่น
+                    ข้อมูลที่เพิ่มเติม ข้อเสนอแนะ เป็นต้น
+                    และอาจมีการแนะนำหรือข้อเสนอแนะเพิ่มเติมที่อาจเป็นประโยชน์ต่อการดำเนินงานของท่าน
+                  </p>
+                </div>
+                <button class="btn btn-outline-light px-4">
+                  <img
+                    class="me-2"
+                    src="../asset/image/icon-load.svg"
+                  />ดาวน์โหลดเอกสาร
+                </button>
+              </div>
+              <img
+                src="../asset/image/icon-close.svg"
+                class="absolute-icon-close"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex box-status mb-4">
+          <div>
+            <img src="../asset/image/icon-status.svg" class="me-3" />
+          </div>
+          <div class="w-100">
+            <div
+              class="d-lg-flex d-block justify-content-between align-items-center mb-4"
+            >
+              <div class="d-flex align-items-center">
+                <h5 class="mb-0">สถานะ:</h5>
+                <button class="btn btn-sm btn-outline-danger-deep ms-3">
+                  <img src="../asset/image/icon-play.svg" class="me-2" />สืบเนื่อง
+                </button>
+              </div>
+              <div class="w-20 text-lg-end text-start">
+                <p class="mb-0">16 กันยายน 2567, 14:23 น.</p>
+              </div>
+            </div>
+            <div class="d-lg-flex d-grid">
+              <div class="w-80">
+                <h5>การตอบกลับของเจ้าหน้าที่:</h5>
+                <ul>
+                  <li>
+                    จากการตรวจสอบข้อกฎหมายและระเบียบที่เกี่ยวข้องพบว่าการใช้ประโยชน์ในที่ดินแบบผสมผสาน
+                    ต้องพิจารณาเป็นรายส่วนโดยให้จัดเก็บภาษีเฉพาะพื้นที่ที่ใช้ประโยชน์จริงในเชิงการเกษตรส่วนที่
+                    เหลือที่ไม่ได้ใช้ประโยชน์ในลักษณะดังกล่าวให้จัดเก็บในอัตราภาษีที่ดินว่างเปล่าหรือประเภทอื่นที่สอดคล้องกับลักษณะของการใช้ที่ดินนั้น
+                  </li>
+                </ul>
+              </div>
+              <div class="w-20 border-left ps-lg-5 ps-0">
+                <h5 class="mb-2">หมายเหตุ:</h5>
+                <p class="mb-0">พิจารณารอบที่ 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex box-status mb-4">
+          <div>
+            <img src="../asset/image/icon-status.svg" class="me-3" />
+          </div>
+          <div class="w-100">
+            <div
+              class="d-lg-flex d-block justify-content-between align-items-center mb-4"
+            >
+              <div class="d-flex align-items-center">
+                <h5 class="mb-0">สถานะ:</h5>
+                <button class="btn btn-sm btn-outline-primary ms-3">
+                  <img
+                    src="../asset/image/icon-comment.svg"
+                    class="me-2"
+                  />นำเข้าพิจารณา
+                </button>
+              </div>
+              <div class="w-20 text-lg-end text-start">
+                <p class="mb-0">16 กันยายน 2567, 14:23 น.</p>
+              </div>
+            </div>
+            <div class="d-lg-flex d-grid">
+              <div class="w-80">
+                <h5>การตอบกลับของเจ้าหน้าที่:</h5>
+                <ul>
+                  <li>
+                    จากการตรวจสอบข้อกฎหมายและระเบียบที่เกี่ยวข้องพบว่าการใช้ประโยชน์ในที่ดินแบบผสมผสาน
+                    ต้องพิจารณาเป็นรายส่วนโดยให้จัดเก็บภาษีเฉพาะพื้นที่ที่ใช้ประโยชน์จริงในเชิงการเกษตรส่วนที่
+                    เหลือที่ไม่ได้ใช้ประโยชน์ในลักษณะดังกล่าวให้จัดเก็บในอัตราภาษีที่ดินว่างเปล่าหรือประเภทอื่นที่สอดคล้องกับลักษณะของการใช้ที่ดินนั้น
+                  </li>
+                </ul>
+              </div>
+              <div class="w-20 border-left ps-lg-5 ps-0">
+                <h5 class="mb-2">หมายเหตุ:</h5>
+                <p class="mb-0">พิจารณารอบที่ 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex box-status mb-4">
+          <div>
+            <img src="../asset/image/icon-status.svg" class="me-3" />
+          </div>
+          <div class="w-100">
+            <div
+              class="d-lg-flex d-block justify-content-between align-items-center mb-4"
+            >
+              <div class="d-flex align-items-center">
+                <h5 class="mb-0">สถานะ:</h5>
+                <button class="btn btn-sm btn-outline-gold ms-3">
+                  <img
+                    src="../asset/image/icon-wait.svg"
+                    class="me-2"
+                  />รอเจ้าหน้าที่ดำเนินการ
+                </button>
+              </div>
+              <div class="w-20 text-lg-end text-start">
+                <p class="mb-0">16 กันยายน 2567, 14:23 น.</p>
+              </div>
+            </div>
+            <div class="d-lg-flex d-grid">
+              <div class="w-80">
+                <h5>การตอบกลับของเจ้าหน้าที่:</h5>
+                <ul>
+                  <li>
+                    จากการตรวจสอบข้อกฎหมายและระเบียบที่เกี่ยวข้องพบว่าการใช้ประโยชน์ในที่ดินแบบผสมผสาน
+                    ต้องพิจารณาเป็นรายส่วนโดยให้จัดเก็บภาษีเฉพาะพื้นที่ที่ใช้ประโยชน์จริงในเชิงการเกษตรส่วนที่
+                    เหลือที่ไม่ได้ใช้ประโยชน์ในลักษณะดังกล่าวให้จัดเก็บในอัตราภาษีที่ดินว่างเปล่าหรือประเภทอื่นที่สอดคล้องกับลักษณะของการใช้ที่ดินนั้น
+                  </li>
+                </ul>
+              </div>
+              <div class="w-20 border-left ps-lg-5 ps-0">
+                <h5 class="mb-2">หมายเหตุ:</h5>
+                <p class="mb-0">พิจารณารอบที่ 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal assessment -->
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body pt-5 px-4">
+            <div class="set-up">
+              <div class="text-center">
+                <h5>ทำแบบประเมินให้คะแนน</h5>
+                <p>
+                  เพื่อให้การระบบหารือถูกพัฒนาไปในทิศทางที่ดีขึ้น
+                  โปรดทำแบบประเมินให้คะแนนระบบ
+                </p>
+              </div>
+              <div class="box-assessment mt-3">
+                <h5>1.ความชัดเจนของข้อมูล</h5>
+                <label
+                  >ข้อมูลที่ได้รับจากระบบมีความชัดเจนและเข้าใจง่ายหรือไม่?</label
+                >
+                <div
+                  class="d-flex flex-row gap-lg-5 gap-3 justify-content-center my-lg-3 my-0"
+                >
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-least.svg" />
+                    <label>น้อยที่สุด</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-little.svg" />
+                    <label>น้อย</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-Indifferent.svg" />
+                    <label>เฉยๆ</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-lot.svg" />
+                    <label>มาก</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-most.svg" />
+                    <label>มากที่สุด</label>
+                  </div>
+                </div>
+              </div>
+              <div class="box-assessment mt-3">
+                <h5>2.ความสะดวกในการใช้งาน</h5>
+                <label>ระบบนี้ใช้งานง่ายและสะดวกสำหรับคุณหรือไม่?</label>
+                <div
+                  class="d-flex flex-row gap-lg-5 gap-3 justify-content-center my-lg-3 my-0"
+                >
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-least.svg" />
+                    <label>น้อยที่สุด</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-little.svg" />
+                    <label>น้อย</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-Indifferent.svg" />
+                    <label>เฉยๆ</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-lot.svg" />
+                    <label>มาก</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-most.svg" />
+                    <label>มากที่สุด</label>
+                  </div>
+                </div>
+              </div>
+              <div class="box-assessment mt-3">
+                <h5>3.ความรวดเร็วในการตอบกลับ</h5>
+                <label>ระบบตอบกลับคุณภายในระยะเวลาที่เหมาะสมหรือไม่?</label>
+                <div
+                  class="d-flex flex-row gap-lg-5 gap-3 justify-content-center my-lg-3 my-0"
+                >
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-least.svg" />
+                    <label>น้อยที่สุด</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-little.svg" />
+                    <label>น้อย</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-Indifferent.svg" />
+                    <label>เฉยๆ</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-lot.svg" />
+                    <label>มาก</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-most.svg" />
+                    <label>มากที่สุด</label>
+                  </div>
+                </div>
+              </div>
+              <div class="box-assessment mt-3">
+                <h5>4.ความพึงพอใจโดยรวม</h5>
+                <label>คุณพอใจกับการใช้งานระบบปรึกษาหารือโดยรวมหรือไม่?</label>
+                <div
+                  class="d-flex flex-row gap-lg-5 gap-3 justify-content-center my-lg-3 my-0"
+                >
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-least.svg" />
+                    <label>น้อยที่สุด</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-little.svg" />
+                    <label>น้อย</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-Indifferent.svg" />
+                    <label>เฉยๆ</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-lot.svg" />
+                    <label>มาก</label>
+                  </div>
+                  <div class="text-center d-grid">
+                    <img src="../asset/image/icon-most.svg" />
+                    <label>มากที่สุด</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center mt-5 px-3">
+                <a
+                  class="text-primary fw-bold col text-center cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  ย้อนกลับ
+                </a>
+                <button
+                  class="btn btn-blue px-5 col"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  เสร็จสิ้น
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header justify-content-end p-4">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="text-center">
+            <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+              <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+            </a>
+          </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <div class="sb-sidenav-menu mt-4">
+            <div class="nav-list">
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="../asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/" class="text-dark">
+                <img src="../asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="../asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="../asset/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="../asset/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

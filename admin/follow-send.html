@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../asset/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../asset/bootstrap/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../asset/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../asset/css/custom.css" />
+    <title>PDPC</title>
+  </head>
+  <body>
+    <!-- navber -->
+    <header class="fixed-top-nav-admin">
+      <nav class="navbar nav-fix py-2 padding-nav-admin">
+        <div class="d-flex w-100 d-lg-none justify-content-between">
+          <button
+            type="button"
+            class="btn btn-link"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="../asset/image/icon-menu.svg" />
+          </button>
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
+            <img class="img-logo" src="../asset/image/image-logo.png" />
+          </a>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="../asset/image/icon-profile.svg" />
+            </button>
+          </a>
+        </div>
+        <div class="d-none d-lg-block">
+          <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
+          <small class="txt-nav-small"
+            >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
+          >
+        </div>
+        <div class="d-lg-flex d-none gap-4 align-items-center">
+          <div class="text-nav-profile text-end">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <a href="/admin/profile.html">
+            <img src="../asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="../asset/image/icon-logout.svg" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <nav class="sb-nav-fixed sb-sidenav">
+      <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+        <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+      </a>
+      <div class="sb-sidenav-menu mt-4">
+        <div class="nav-list">
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="../asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
+        </div>
+        <div class="nav-list">
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="../asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navber end -->
+
+    <div class="layout_content">
+      <div class="d-lg-flex d-none justify-content-center mb-4">
+        <ul class="status">
+          <li class="succeed">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-active.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 1</label>
+              <h4 class="text-grey step-1-name">ข้อมูลผู้หารือ</h4>
+            </div>
+          </li>
+          <li class="statusline succeed"></li>
+          <li class="succeed">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-active.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 2</label>
+              <h4 class="text-grey step-1-name">แจ้งเรื่องหารือ</h4>
+            </div>
+          </li>
+          <li class="statusline succeed"></li>
+          <li class="succeed">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-active.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 3</label>
+              <h4 class="text-grey step-1-name">ตรวจสอบ</h4>
+            </div>
+          </li>
+          <li class="statusline succeed"></li>
+          <li class="succeed">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-active.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 4</label>
+              <h4 class="text-grey step-1-name">เจ้าหน้าที่รับเรื่อง</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="card-admin d-flex justify-content-between d-lg-none py-2 mb-4"
+      >
+        <div>
+          <h5 class="mt-3">เจ้าหน้าที่รับเรื่อง</h5>
+          <label>ขั้นตอนที่ 4</label>
+        </div>
+        <div class="">
+          <div
+            role="progressbar"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="--value: 100"
+          >
+            <span>4/4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-admin max-w mb-4">
+        <div class="row">
+          <div class="col-12 text-center mx-auto">
+            <img src="../asset/image/clipboard.svg" />
+            <p class="mb-2">วันที่ 12 กันยายน 2567, 15:33 น.</p>
+            <small class="txt-2"
+              >ส่งเรื่องหารือให้เจ้าหน้าที่เรียบร้อยแล้ว</small
+            >
+            <h5 class="my-3 txt-1">เลขที่หารือ: กค 0706/ว 3456</h5>
+            <p class="d-none d-lg-block">
+              โปรดเลือกคะแนนความพึงพอใจต่อระบบส่งคำร้อง
+            </p>
+            <small class="d-none d-lg-block"
+              >เพื่อให้การระบบหารือถูกพัฒนาไปในทิศทางที่ดีขึ้น
+              โปรดให้คะแนนความพึงพอใจของท่าน</small
+            >
+            <div class="d-none d-lg-block">
+              <img src="../asset/image/qr.svg" />
+            </div>
+          </div>
+          <div
+            class="d-lg-flex d-none flex-row gap-5 justify-content-center my-lg-5 my-0"
+          >
+            <div class="text-center d-grid">
+              <img src="../asset/image/icon-least.svg" />
+              <label>น้อยที่สุด</label>
+            </div>
+            <div class="text-center d-grid">
+              <img src="../asset/image/icon-little.svg" />
+              <label>น้อย</label>
+            </div>
+            <div class="text-center d-grid">
+              <img src="../asset/image/icon-Indifferent.svg" />
+              <label>เฉยๆ</label>
+            </div>
+            <div class="text-center d-grid">
+              <img src="../asset/image/icon-lot.svg" />
+              <label>มาก</label>
+            </div>
+            <div class="text-center d-grid">
+              <img src="../asset/image/icon-most.svg" />
+              <label>มากที่สุด</label>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <button class="btn btn-outline-primary col">
+              กลับไปยังหน้าหลัก
+            </button>
+            <button class="btn btn-blue col">ติดตามผล</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-admin max-w mb-4 text-center py-5 d-block d-lg-none">
+        <h5>โปรดเลือกคะแนนความพึงพอใจต่อระบบส่งคำร้อง</h5>
+        <label class="mb-5">
+          เพื่อให้การระบบหารือถูกพัฒนาไปในทิศทางที่ดีขึ้น
+          โปรดให้คะแนนความพึงพอใจของท่าน
+        </label>
+        <div class="d-flex flex-row gap-4 justify-content-center my-lg-5 my-0">
+          <div class="text-center d-grid">
+            <img src="../asset/image/icon-least.svg" />
+            <label>น้อยที่สุด</label>
+          </div>
+          <div class="text-center d-grid">
+            <img src="../asset/image/icon-little.svg" />
+            <label>น้อย</label>
+          </div>
+          <div class="text-center d-grid">
+            <img src="../asset/image/icon-Indifferent.svg" />
+            <label>เฉยๆ</label>
+          </div>
+          <div class="text-center d-grid">
+            <img src="../asset/image/icon-lot.svg" />
+            <label>มาก</label>
+          </div>
+          <div class="text-center d-grid">
+            <img src="../asset/image/icon-most.svg" />
+            <label>มากที่สุด</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header justify-content-end p-4">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="text-center">
+            <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+              <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+            </a>
+          </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <div class="sb-sidenav-menu mt-4">
+            <div class="nav-list">
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="../asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/" class="text-dark">
+                <img src="../asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="../asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="../asset/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="../asset/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

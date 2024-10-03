@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../asset/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../asset/bootstrap/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../asset/aos/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="../asset/css/custom.css" />
+    <title>PDPC</title>
+  </head>
+  <body>
+    <!-- navber -->
+    <header class="fixed-top-nav-admin">
+      <nav class="navbar nav-fix py-2 padding-nav-admin">
+        <div class="d-flex w-100 d-lg-none justify-content-between">
+          <button
+            type="button"
+            class="btn btn-link"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="../asset/image/icon-menu.svg" />
+          </button>
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
+            <img class="img-logo" src="../asset/image/image-logo.png" />
+          </a>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="../asset/image/icon-profile.svg" />
+            </button>
+          </a>
+        </div>
+        <div class="d-none d-lg-block">
+          <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
+          <small class="txt-nav-small"
+            >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
+          >
+        </div>
+        <div class="d-lg-flex d-none gap-4 align-items-center">
+          <div class="text-nav-profile text-end">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <a href="/admin/profile.html">
+            <img src="../asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="../asset/image/icon-logout.svg" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <nav class="sb-nav-fixed sb-sidenav">
+      <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+        <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+      </a>
+      <div class="sb-sidenav-menu mt-4">
+        <div class="nav-list">
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="../asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
+        </div>
+        <div class="nav-list">
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="../asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navber end -->
+
+    <div class="layout_content">
+      <div class="d-lg-flex d-none justify-content-center mb-4">
+        <ul class="status">
+          <li class="succeed">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-active.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 1</label>
+              <h4 class="text-grey step-1-name">ข้อมูลผู้หารือ</h4>
+            </div>
+          </li>
+          <li class="statusline succeed"></li>
+          <li class="active">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-number.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 2</label>
+              <h4 class="text-grey step-1-name">แจ้งเรื่องหารือ</h4>
+            </div>
+          </li>
+          <li class="statusline"></li>
+          <li class="inactive">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                class="icon-register"
+                src="../asset/image/icon-megaphone.svg"
+              />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 3</label>
+              <h4 class="text-grey step-1-name">ตรวจสอบ</h4>
+            </div>
+          </li>
+          <li class="statusline"></li>
+          <li class="inactive">
+            <div class="d-flex flex-column align-items-center">
+              <img class="icon-register" src="../asset/image/icon-heart.svg" />
+              <label class="mt-2 text-grey step-1">ขั้นตอนที่ 4</label>
+              <h4 class="text-grey step-1-name">เจ้าหน้าที่รับเรื่อง</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="card-admin d-flex justify-content-between d-lg-none py-2 mb-4"
+      >
+        <div>
+          <h5 class="mt-3">เเจ้งเรื่องหารือ</h5>
+          <label>ขั้นตอนที่ 2</label>
+        </div>
+        <div class="">
+          <div
+            role="progressbar"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="--value: 50"
+          >
+            <span>2/4</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-admin max-w mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-lg-5 mb-4">
+              <img
+                src="../asset/image/icon-doc.svg"
+                class="me-3"
+              />เเจ้งเรื่องหารือ
+            </h5>
+            <p>
+              หากคุณมีเรื่องที่ต้องการหารือกับเจ้าหน้าที่
+              โปรดกรอกแบบฟอร์มด้สนล่างได้เลย
+              ทางเจ้าหน้าที่จะตอบกลับท่านให้เร็วที่สุด
+            </p>
+          </div>
+          <div class="mb-3 col-lg-6 col-12 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >ผู้มาหารือ:</label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>-- เลือกผู้มาหารือ --</option>
+            </select>
+          </div>
+          <div class="mb-3 col-lg-6 col-12 px-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >หัวข้อหารือ:</label
+            >
+            <select
+              class="form-select input-select"
+              aria-label="Default select example"
+            >
+              <option selected>-- เลือกหัวข้อหารือ --</option>
+            </select>
+          </div>
+          <div class="mb-3 col-lg-6 col-12 px-2">
+            <label for="exampleFormControlInput2" class="form-label"
+              >เลขที่หนังสือ :</label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput2"
+              placeholder="เลขที่หนังสือ"
+            />
+          </div>
+          <div class="mb-3 col-lg-6 col-12 px-2">
+            <label for="exampleFormControlInput3" class="form-label"
+              >หน่วยงานที่ขอ :</label
+            >
+            <input
+              type="text"
+              class="form-control input-login"
+              id="exampleFormControlInput3"
+              placeholder="หน่วยงานที่ขอ"
+            />
+          </div>
+          <div class="mb-3 col-lg-12 col-12 px-2">
+            <label for="exampleFormControlInput3" class="form-label"
+              >รายละเอียดการหารือ :</label
+            >
+            <textarea
+              class="form-control input-textarea"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="กรุณาอธิบายอย่างละเอียด"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="card-admin max-w mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-lg-5 mb-4">
+              <img
+                src="../asset/image/icon-file.svg"
+                class="me-3"
+              />เอกสารหลักฐานที่เกี่ยวข้อง
+            </h5>
+            <p>
+              เอกสารหลักฐานที่เกี่ยวข้องเกิดขึ้นกับการหารือ เช่น พยานเอกสาร
+              พยานวัตถุหรือถ้อยคำของพยานบุคคลที่สนับสนุนเรื่องปรึกษาหารือที่มีความชัดเจน
+              เพียงพอที่จะพิจารณาได้
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="style-dashed d-flex justify-content-center mb-3">
+              <div class="text-center">
+                <img src="../asset/image/download-file-1.svg" class="mb-3" />
+                <h5>แนบไฟล์เอกสารหลักฐาน</h5>
+                <p>
+                  * เอกสารแนบต้องเป็น .jpg หรือ .pdf
+                  เท่านั้นและขนาดไฟล์ต้องไม่เกิน 1 MB
+                </p>
+              </div>
+            </div>
+            <div
+              class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
+            >
+              <div class="d-flex">
+                <img class="" src="../asset/image/icon-pdf.svg" />
+                <div class="ms-3">
+                  <p class="mb-1">
+                    ขอหารือการจัดเก็บภาษีที่ดินและสิ่งปลูกสร้าง.pdf
+                  </p>
+                  <small>1.25MB</small>
+                </div>
+              </div>
+              <div>
+                <img src="../asset/image/icon-bin.svg" />
+              </div>
+            </div>
+            <div
+              class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
+            >
+              <div class="d-flex">
+                <img class="" src="../asset/image/icon-xlsx.svg" />
+                <div class="ms-3">
+                  <p class="mb-1">ProjectPlan_PDPA_SystemDev.xlsx</p>
+                  <small>4.85MB</small>
+                </div>
+              </div>
+              <div>
+                <img src="../asset/image/icon-bin.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-lg-end pb-4 d-flex justify-content-lg-end justify-content-between align-items-center text-center max-w px-3 mb-3 px-lg-0"
+      >
+        <a
+          href="/admin/follow-detail.html"
+          class="text-primary fw-bold text-center cursor-pointer w-btn-link"
+        >
+          ย้อนกลับ
+        </a>
+        <a href="/admin/follow-check.html" class="">
+          <button class="btn btn-blue px-5">ดำเนินการต่อ</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header justify-content-end p-4">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="text-center">
+            <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+              <img class="img-logo-nav" src="../asset/image/image-logo.png" />
+            </a>
+          </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
+          <div class="sb-sidenav-menu mt-4">
+            <div class="nav-list">
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="../asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/" class="text-dark">
+                <img src="../asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="../asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="../asset/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="../asset/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
