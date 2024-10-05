@@ -125,6 +125,34 @@ li {
 .bg-grey {
   background-color: #f7f7f7;
 }
+.line-with-dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin: 0px 15px 0px 0px;
+}
+.line {
+  width: 2px;
+  background-color: #e6e6e6;
+  flex-grow: 1;
+}
+.dot {
+  width: 18px;
+  height: 18px;
+  background-color: #e6e6e6;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+}
+.dot.active {
+  background-color: #ceb260;
+}
+.line.active {
+  background-color: #ceb260;
+}
+
 .background-faq {
   background: linear-gradient(91.66deg, #1b294c 0%, #2e3c69 100%);
   height: 136.59px;
